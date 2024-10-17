@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "ai/hello.py",
+      "src": "app.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
-      "src": "/ai/hello",
-      "dest": "ai/hello.py"
+      "src": "/(.*)",
+      "dest": "app.py"
     }
   ]
 }
